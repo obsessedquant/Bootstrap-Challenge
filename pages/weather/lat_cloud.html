@@ -17,6 +17,9 @@
             border-radius: 15px;
             background: white;
         }
+        img:hover {
+            opacity: 0.75;
+        }
     </style>
 
 </head>
@@ -31,15 +34,12 @@
                 aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="../../index.html">Home</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">Weather Project</a>
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                            <!-- <li><a class="dropdown-item" href="./overview.html">Weather Analysis</a></li>
-                            <li><hr class="dropdown-divider"></li> -->
+                            <li><a class="dropdown-item" href="./overview.html">Project Overview</a></li>
                             <li><a class="dropdown-item" href="./comparisons.html">Comparisons</a></li>
                             <li><a class="dropdown-item" href="./lat_temp.html">Lat v Temp</a></li>
                             <li><a class="dropdown-item" href="./lat_humid.html">Lat v Humidity</a></li>
@@ -47,13 +47,6 @@
                             <li><a class="dropdown-item" href="./lat_wind.html">Lat v Windspeed</a></li>
                             <li><a class="dropdown-item" href="./data.html">Data</a></li>
                         </ul>
-                        <!-- <li class="dropdown-submenu"> -->
-                        <!-- <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                            aria-expanded="false" href="./overview.html"><span class="nav-label">Weather
-                                Analysis</span><span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            
-                        </ul> -->
                     </li>
                 </ul>
             </div>
@@ -68,45 +61,39 @@
         <article class="row mt-3">
 
             <div class="col">
-                <!-- <h2 class="text-center mt-1 mb-2" style="font-size: 16pt"><strong>Summary: Latitude vs. X</strong></h2> -->
-                <!-- <figure class="figure"> -->
-                    <!-- <img class="img-fluid figure-img float-left pr-3" src="./images/fig1_lat_v_temp.png"> -->
                 <img class="image-wrapper float-start pr-3 img-fluid" src="./images/fig3_lat_v_cloudiness.png" style="margin-right: 1rem; border-style:double; border-color:lightgrey">
-                    <!-- <figcaption class="figure-caption" style="color:lightgrey; font-style:italic">Figure 1. Latitude v
-                        Temperature</figcaption>
-                </figure> -->
-                <!-- <p style="text-align:justify; max-width: 600px; margin:auto; padding-bottom: 30px; p-3"> -->
                 <div class="single-post-content-wrapper p-3">
-                    Lorem ipsum dolor
-                    sit
-                    amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut
-                    enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat.
+                    This plot shows the relationship between the cloudiness and latitude for the date specified.
                     <br><br>
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur.
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                    est
-                    laborum.
+                    There is no clear relationship between latitude and cloudiness.
+                    <br><br>
+                    Cloudiness probably has a closer relationship with the amount of humidity in an area than location proximity to the equator, which means that it's probably more dependent upon geography and landscape similar to humidity. Additional studies may be done to analyze this relationship with the same dataset. Stay tuned for updates!
                 </div>
             </div>
         </article>
 
         <article class="row mt-5">
                 <h2 class="text-center mt-1 mb-2" style="font-size: 16pt"><strong>Visualizations</strong></h2>
-                    <div class="col-md-3">
+                <div class="col-md-3">
+                    <a href="lat_temp.html">
                         <img class="img-fluid figure-img" src="./images/fig1_lat_v_temp.png">
-                    </div>
-                    <div class="col-md-3">
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="lat_humid.html">
                         <img class="img-fluid figure-img" src="./images/fig2_lat_v_humidity.png">
-                    </div>
-                    <div class="col-md-3">
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="lat_cloud.html">
                         <img class="img-fluid figure-img" src="./images/fig3_lat_v_cloudiness.png">
-                    </div>
-                    <div class="col-md-3">
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="lat_wind.html">
                         <img class="img-fluid figure-img" src="./images/fig4_lat_v_windspeed.png">
-                    </div>
+                    </a>
+                </div>
         </article>
 
     </div>
