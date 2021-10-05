@@ -13,11 +13,6 @@
     <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
     <style>
-        .challenge.container {
-            width: 100%;
-            padding: 0;
-        }
-
         /* .post img {
   background: transparent;
 } */
@@ -61,38 +56,63 @@
 
     <!-- Page content-->
     <div class="container">
-        <h1 class="text-center mt-1" style="color: #cdae51; font-weight: bold;">Weather Analysis</h1>
-        <h2 class="text-center mt-1" style="font-size: 16pt">We treat your pets like we treat our own.</h2>
-        <div class="row text-center">
-            <div class="col-md-6">
-                <figure class="figure">
-                    <img class="img-fluid figure-img" src="./images/fig1_lat_v_temp.png">
-                    <figcaption class="figure-caption" style="color:lightgrey; font-style:italic">Figure 1. Latitude v
+        <h1 class="text-center mt-5" style="color: #cdae51; font-weight: bold;">Weather Analysis</h1>
+        
+        <!-- <div class="row text-center"> -->
+        <article class="row single-post mt-3 no-gutters">
+
+            <div class="col-sm-6 col-md-6 col-lg-6 col-xl-8">
+                <h2 class="text-center mt-1 mb-2" style="font-size: 16pt"><strong>Summary: Latitude vs. X</strong></h2>
+                <!-- <figure class="figure"> -->
+                    <!-- <img class="img-fluid figure-img float-left pr-3" src="./images/fig1_lat_v_temp.png"> -->
+                <img class="image-wrapper float-start pr-3 img-fluid" src="./images/fig1_lat_v_temp.png" style="margin-right: 1rem;">
+                    <!-- <figcaption class="figure-caption" style="color:lightgrey; font-style:italic">Figure 1. Latitude v
                         Temperature</figcaption>
-                </figure>
-            </div>
-            <div class="col-md-6">
-                <p style="text-align:justify; max-width: 600px; margin:auto; padding-bottom: 30px;">Lorem ipsum dolor
+                </figure> -->
+                <!-- <p style="text-align:justify; max-width: 600px; margin:auto; padding-bottom: 30px; p-3"> -->
+                <div class="single-post-content-wrapper p-3 hidden-xs" style="padding: 70px;">
+                    Lorem ipsum dolor
                     sit
                     amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut
                     enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                     consequat.
+                    <br><br>
                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
                     pariatur.
                     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
                     est
-                    laborum.</p>
+                    laborum.
+                </div>
             </div>
-        </div>
+
+            <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                <h2 class="text-center mt-1 mb-2" style="font-size: 16pt"><strong>Visualizations</strong></h2>
+                <div class="row text-center">
+                    <div class="col-md-6">
+                        <img class="img-fluid figure-img" src="./images/fig5_n_hem_lat_v_temp.png">
+                    </div>
+                    <div class="col-md-6">
+                        <img class="img-fluid figure-img" src="./images/fig6_s_hem_lat_v_temp.png">
+                    </div>
+                </div>
+
+                <div class="row text-center">
+                    <div class="col-md-6">
+                        <img class="img-fluid figure-img" src="./images/fig2_lat_v_humidity.png">
+                    </div>
+                    <div class="col-md-6">
+                        <img class="img-fluid figure-img" src="./images/fig3_lat_v_cloudiness.png">
+                    </div>
+                </div>
+
+            </div>
+
+        </article>
 
     </div>
 
-    <p style="padding-top:30px;">
-        <a href="https://github.com/obsessedquant" style="color:lightskyblue;">Visit Us</a>
-    </p>
-
-    <div class="container challenge" style="padding-bottom:30px">
+    <!-- <div class="container challenge" style="padding-bottom:30px">
         <h3 style="text-align:center; padding-top:30px; font-size:16pt">REVIEWS</h3>
         <div class="row" style="background-color: #704241;">
             <div class="col-sm-6 col-lg-3" style="border:5px solid #DFDFDF; padding:10px;">
@@ -135,7 +155,7 @@
                     distinguish.</p>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
