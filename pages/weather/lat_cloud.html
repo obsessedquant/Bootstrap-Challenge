@@ -7,15 +7,12 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <title>obsessedquant.com/weather</title>
+    <title>obsessedquant.com/weather/lat_temp</title>
 
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
     <style>
-        /* .post img {
-  background: transparent;
-} */
         img {
             border-radius: 15px;
             background: white;
@@ -39,15 +36,24 @@
                     <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
+                            data-bs-toggle="dropdown" aria-expanded="false">Weather Project</a>
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Weather Analysis</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider" />
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <!-- <li><a class="dropdown-item" href="./overview.html">Weather Analysis</a></li>
+                            <li><hr class="dropdown-divider"></li> -->
+                            <li><a class="dropdown-item" href="./comparisons.html">Comparisons</a></li>
+                            <li><a class="dropdown-item" href="./lat_temp.html">Lat v Temp</a></li>
+                            <li><a class="dropdown-item" href="./lat_humid.html">Lat v Humidity</a></li>
+                            <li><a class="dropdown-item" href="./lat_cloud.html">Lat v Cloudiness</a></li>
+                            <li><a class="dropdown-item" href="./lat_wind.html">Lat v Windspeed</a></li>
+                            <li><a class="dropdown-item" href="./data.html">Data</a></li>
                         </ul>
+                        <!-- <li class="dropdown-submenu"> -->
+                        <!-- <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                            aria-expanded="false" href="./overview.html"><span class="nav-label">Weather
+                                Analysis</span><span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            
+                        </ul> -->
                     </li>
                 </ul>
             </div>
@@ -56,21 +62,21 @@
 
     <!-- Page content-->
     <div class="container">
-        <h1 class="text-center mt-5" style="color: #cdae51; font-weight: bold;">Weather Analysis</h1>
+        <h2 class="text-center mt-5" style="color: #cdae51; font-weight: bold;">Latitude vs. Cloudiness Analysis</h1>
         
         <!-- <div class="row text-center"> -->
-        <article class="row single-post mt-3 no-gutters">
+        <article class="row mt-3">
 
-            <div class="col-sm-6 col-md-6 col-lg-6 col-xl-8">
-                <h2 class="text-center mt-1 mb-2" style="font-size: 16pt"><strong>Summary: Latitude vs. X</strong></h2>
+            <div class="col">
+                <!-- <h2 class="text-center mt-1 mb-2" style="font-size: 16pt"><strong>Summary: Latitude vs. X</strong></h2> -->
                 <!-- <figure class="figure"> -->
                     <!-- <img class="img-fluid figure-img float-left pr-3" src="./images/fig1_lat_v_temp.png"> -->
-                <img class="image-wrapper float-start pr-3 img-fluid" src="./images/fig1_lat_v_temp.png" style="margin-right: 1rem;">
+                <img class="image-wrapper float-start pr-3 img-fluid" src="./images/fig3_lat_v_cloudiness.png" style="margin-right: 1rem; border-style:double; border-color:lightgrey">
                     <!-- <figcaption class="figure-caption" style="color:lightgrey; font-style:italic">Figure 1. Latitude v
                         Temperature</figcaption>
                 </figure> -->
                 <!-- <p style="text-align:justify; max-width: 600px; margin:auto; padding-bottom: 30px; p-3"> -->
-                <div class="single-post-content-wrapper p-3 hidden-xs" style="padding: 70px;">
+                <div class="single-post-content-wrapper p-3">
                     Lorem ipsum dolor
                     sit
                     amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -85,29 +91,22 @@
                     laborum.
                 </div>
             </div>
+        </article>
 
-            <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+        <article class="row mt-5">
                 <h2 class="text-center mt-1 mb-2" style="font-size: 16pt"><strong>Visualizations</strong></h2>
-                <div class="row text-center">
-                    <div class="col-md-6">
-                        <img class="img-fluid figure-img" src="./images/fig5_n_hem_lat_v_temp.png">
+                    <div class="col-md-3">
+                        <img class="img-fluid figure-img" src="./images/fig1_lat_v_temp.png">
                     </div>
-                    <div class="col-md-6">
-                        <img class="img-fluid figure-img" src="./images/fig6_s_hem_lat_v_temp.png">
-                    </div>
-                </div>
-
-                <div class="row text-center">
-                    <div class="col-md-6">
+                    <div class="col-md-3">
                         <img class="img-fluid figure-img" src="./images/fig2_lat_v_humidity.png">
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-3">
                         <img class="img-fluid figure-img" src="./images/fig3_lat_v_cloudiness.png">
                     </div>
-                </div>
-
-            </div>
-
+                    <div class="col-md-3">
+                        <img class="img-fluid figure-img" src="./images/fig4_lat_v_windspeed.png">
+                    </div>
         </article>
 
     </div>

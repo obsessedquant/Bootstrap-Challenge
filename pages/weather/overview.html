@@ -7,19 +7,18 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <title>obsessedquant.com</title>
+    <title>obsessedquant.com/weather</title>
 
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
     <style>
-        .challenge.container {
-            width: 100%;
-            padding: 0;
-        }
-
+        /* .post img {
+  background: transparent;
+} */
         img {
-            border-radius: 500px;
+            border-radius: 15px;
+            background: white;
         }
     </style>
 
@@ -35,43 +34,110 @@
                 aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
+                    </li>
                     <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
+                            data-bs-toggle="dropdown" aria-expanded="false">Weather Project</a>
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="pages/weather/overview.html">Weather Analysis</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider" />
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <!-- <li><a class="dropdown-item" href="./overview.html">Weather Analysis</a></li>
+                            <li><hr class="dropdown-divider"></li> -->
+                            <li><a class="dropdown-item" href="./comparisons.html">Comparisons</a></li>
+                            <li><a class="dropdown-item" href="./lat_temp.html">Lat v Temp</a></li>
+                            <li><a class="dropdown-item" href="./lat_humid.html">Lat v Humidity</a></li>
+                            <li><a class="dropdown-item" href="./lat_cloud.html">Lat v Cloudiness</a></li>
+                            <li><a class="dropdown-item" href="./lat_wind.html">Lat v Windspeed</a></li>
+                            <li><a class="dropdown-item" href="./data.html">Data</a></li>
                         </ul>
+                        <!-- <li class="dropdown-submenu"> -->
+                        <!-- <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                            aria-expanded="false" href="./overview.html"><span class="nav-label">Weather
+                                Analysis</span><span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            
+                        </ul> -->
                     </li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                        <hr class="dropdown-divider" />
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+                </li>
                 </ul>
             </div>
         </div>
     </nav>
+
     <!-- Page content-->
     <div class="container">
-        <div class="text-center mt-5">
-            <h1 style="color: #cdae51; font-weight: bold;">obsessedquant</h1>
-            <h2 style="font-size: 16pt">We treat your pets like we treat our own.</h2>
-            <img src="./images/all-animals.jpg" style="width:100%">
-            <p style="padding-top:30px;">
-                <a href="https://github.com/obsessedquant" style="color:lightskyblue;">Visit Us</a>
-            </p>
-            <p style="text-align:justify; max-width: 600px; margin:auto; padding-bottom: 30px;">Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                laborum.</p>
-        </div>
+        <h1 class="text-center mt-5" style="color: #cdae51; font-weight: bold;">Weather Analysis</h1>
+
+        <!-- <div class="row text-center"> -->
+        <article class="row mt-3">
+
+            <div class="col-sm-6 col-md-6 col-lg-6 col-xl-8">
+                <h2 class="text-center mt-1 mb-2" style="font-size: 16pt"><strong>Summary: Latitude vs. X</strong></h2>
+                <!-- <figure class="figure"> -->
+                <!-- <img class="img-fluid figure-img float-left pr-3" src="./images/fig1_lat_v_temp.png"> -->
+                <img class="image-wrapper float-start pr-3 img-fluid" src="./images/earth.jpg"
+                    style="margin-right: 1rem; border-style:double; border-color:lightgrey">
+                <!-- <figcaption class="figure-caption" style="color:lightgrey; font-style:italic">Figure 1. Latitude v
+                        Temperature</figcaption>
+                </figure> -->
+                <!-- <p style="text-align:justify; max-width: 600px; margin:auto; padding-bottom: 30px; p-3"> -->
+                <div class="single-post-content-wrapper p-3">
+                    Lorem ipsum dolor
+                    sit
+                    amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut
+                    enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.
+                    <br><br>
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur.
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                    est
+                    laborum.
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                <h2 class="text-center mt-1 mb-2" style="font-size: 16pt"><strong>Visualizations</strong></h2>
+                <div class="row text-center">
+                    <div class="col-lg-6">
+                        <a href="lat_temp.html">
+                            <img class="img-fluid figure-img" src="./images/fig1_lat_v_temp.png">
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a href="lat_humid.html">
+                            <img class="img-fluid figure-img" src="./images/fig2_lat_v_humidity.png">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row text-center">
+                    <div class="col-lg-6">
+                        <a href="lat_cloud.html">
+                            <img class="img-fluid figure-img" src="./images/fig3_lat_v_cloudiness.png">
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a href="lat_wind.html">
+                            <img class="img-fluid figure-img" src="./images/fig4_lat_v_windspeed.png">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </article>
+
     </div>
 
-    <div class="container challenge" style="padding-bottom:30px">
+    <!-- <div class="container challenge" style="padding-bottom:30px">
         <h3 style="text-align:center; padding-top:30px; font-size:16pt">REVIEWS</h3>
         <div class="row" style="background-color: #704241;">
             <div class="col-sm-6 col-lg-3" style="border:5px solid #DFDFDF; padding:10px;">
@@ -114,7 +180,7 @@
                     distinguish.</p>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
