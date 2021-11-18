@@ -1,20 +1,48 @@
 // This function will be run at the start or refresh of the page
+var myFilter = 5;
+function read_data(myFilter){
+    let data = [];
+    d3.json("stoch_rsi.json").then(function (stoch_rsi) {
+        let tbody1 = d3.select("#tbody1");
+        tbody1.html("");
+        data = stoch_rsi.data.filter(x=>x[10]<myFilter);
+        console.log('data', data);
+        data.forEach(x => {
+            let row = tbody1.append("tr");
+            Object.entries(x).forEach(([head, value]) => row.append("td").text(value))
+        });
 
-
-d3.json("stoch_rsi.json").then(function (stoch_rsi) {
-    console.log('data', stoch_rsi);
-    console.log('data.data', stoch_rsi.data);
-    console.log('data.data[0]', stoch_rsi.data[0]);
-    // console.log('data.ADX.keys'),data.ADX['3605'];
-
-    let tbody1 = d3.select("#tbody1");
-
-    stoch_rsi.data.forEach(x => {
-        let row = tbody1.append("tr");
-        Object.entries(x).forEach(([head, value]) => row.append("td").text(value))
     });
+    return data;
+}
+read_data(myFilter);
 
-});
+// console.log(data);
+// console.log('data', data.length);
+
+// var tbody1 = d3.select("#tbody1");
+    
+// data.forEach(x => {
+//     console.log('data', x);
+//     let row = tbody1.append("tr");
+//     Object.entries(x).forEach(([head, value]) => row.append("td").text(value))
+// });
+
+
+// d3.json("stoch_rsi.json").then(function (stoch_rsi) {
+//     console.log('data', stoch_rsi);
+//     console.log('data.data', stoch_rsi.data);
+//     console.log('data.data[0]', stoch_rsi.data[0]);
+//     // console.log('data.ADX.keys'),data.ADX['3605'];
+
+//     let tbody1 = d3.select("#tbody1");
+
+//     stoch_rsi.data.forEach(x => {
+//         let row = tbody1.append("tr");
+//         Object.entries(x).forEach(([head, value]) => row.append("td").text(value))
+//     });
+
+// });
 
 d3.json("ichimoku.json").then(function (ichimoku) {
     console.log('data', ichimoku);
