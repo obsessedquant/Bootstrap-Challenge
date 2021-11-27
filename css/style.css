@@ -4,23 +4,6 @@
   box-sizing: border-box;
 }
 
-.challenge.container {
-  width: 100%;
-  padding: 0;
-}
-
-.aImg {
-  border-radius: 500px;
-}
-
-.card {
-  background: #dcdcdc;
-}
-
-.card:hover {
-  opacity: 0.9;
-}
-
 .rgbKineticSlider {
   display: block;
   position: relative;
@@ -37,4 +20,18 @@
   left: 0 !important;
   transform: scale(1) !important;
   color: black;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  position: absolute;
+  top: 50vh;
+  z-index: 1;
+  background-color: white;
+  padding: 20px;
+}
+
+.button {
+  right: 20px;
 }

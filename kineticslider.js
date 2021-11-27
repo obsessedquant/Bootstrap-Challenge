@@ -28,7 +28,7 @@ rgbKineticSlider = new rgbKineticSlider({
   cursorMomentum: 0.14, // lower is slower
 
   // swipe
-  swipe: false, // enable swipe
+  swipe: true, // enable swipe
   swipeDistance: window.innerWidth * 0.4, // swipe distance - ex : 580
   swipeScaleIntensity: 2, // scale intensity during swipping
 
@@ -38,11 +38,11 @@ rgbKineticSlider = new rgbKineticSlider({
   transitionScaleAmplitude: 160, // scale amplitude during transition
 
   // regular navigation
-  nav: true, // enable navigation
-  navElement: ".main-nav", // set nav class
+  // nav: true, // enable navigation
+  // navElement: ".main-nav", // set nav class
 
   // image rgb effect
-  imagesRgbEffect: false, // enable img rgb effect
+  imagesRgbEffect: true, // enable img rgb effect
   imagesRgbIntensity: 0.9, // set img rgb intensity
   navImagesRgbIntensity: 80, // set img rgb intensity for regular nav
 
