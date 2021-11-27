@@ -26,10 +26,12 @@ nav a {
   color: black;
   text-decoration: none;
   position: absolute;
-  top: 50vh;
+  top: 85vh;
   z-index: 1;
   background-color: white;
-  padding: 20px;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 5px 10px;
 }
 
 .button {
