@@ -1,5 +1,8 @@
 // images setup
-const images = ["images/Social_Network_Analysis_Visualization.png"];
+// const images = ["images/Social_Network_Analysis_Visualization.png"];
+// const images = ["images/data_robot.png"];
+const images = ["images/Data_Visualization2.jpg"];
+// const images = ["images/data_visualize.png"];
 
 // content setup
 const texts = [
@@ -25,7 +28,7 @@ rgbKineticSlider = new rgbKineticSlider({
   cursorMomentum: 0.14, // lower is slower
 
   // swipe
-  swipe: true, // enable swipe
+  swipe: false, // enable swipe
   swipeDistance: window.innerWidth * 0.4, // swipe distance - ex : 580
   swipeScaleIntensity: 2, // scale intensity during swipping
 
@@ -48,17 +51,18 @@ rgbKineticSlider = new rgbKineticSlider({
   textsSubTitleDisplay: true, // show subtitles
   textsTiltEffect: true, // enable text tilt
   googleFonts: ["Playfair Display:700", "Roboto:400"], // select google font to use
-  buttonMode: false, // enable button mode for title
+  buttonMode: true, // enable button mode for title
   textsRgbEffect: true, // enable text rgb effect
   textsRgbIntensity: 0.03, // set text rgb intensity
   navTextsRgbIntensity: 15, // set text rgb intensity for regular nav
 
-  textTitleColor: "rgb(205,174,81)", // title color
+  //   textTitleColor: "rgb(205,174,81)", // title color
+  textTitleColor: "white", // title color
   textTitleSize: 125, // title size
   mobileTextTitleSize: 60, // title size
   textTitleLetterspacing: 3, // title letterspacing
 
-  textSubTitleColor: "black", // subtitle color ex : 0x000000
+  textSubTitleColor: "white", // subtitle color ex : 0x000000
   textSubTitleSize: 21, // subtitle size
   mobileTextSubTitleSize: 21, // mobile subtitle size
   textSubTitleLetterspacing: 2, // subtitle letter spacing
