@@ -7,7 +7,7 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <title>OQ | economics</title>
+    <title>OQ | machine learning</title>
 
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
@@ -42,7 +42,7 @@
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">Economic Indicators</a>
+                            data-bs-toggle="dropdown" aria-expanded="false">Machine Learning</a>
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="#">Coming Soon!</a></li>
                             <!-- <li><a class="dropdown-item" href="./lat_temp.html">Lat v Temp</a></li>
@@ -61,16 +61,16 @@
 
     <!-- Page content-->
     <div class="container">
-        <h1 class="text-center mt-5" style="color: #cdae51; font-weight: bold;">Economic Indicators</h1>
+        <h1 class="text-center mt-5" style="color: #cdae51; font-weight: bold;">Machine Learning</h1>
 
         <article class="row mt-3">
 
             <div class="col-md-12">
                 <h2 class="text-center mt-1 mb-2" style="font-size: 16pt"><strong>Introduction</strong></h2>
                 <div class="single-post-content-wrapper p-3">
-                    The purpose of this project is to track and analyze the various economic indicators and metrics. Once all of the metrics have been compiled, then machine learning will be applied to identify the principle components with the aim of predicting when market conditions will change for portfolio risk management.
+                    The purpose of this project is to explore machine learning applications including supervised, unsupervised, and deep learning methodologies and identify trends that cannot be visualized in easily in 2-D and 3-D space.
                     <br><br>
-                    The data has been pulled from the various official sources and Python has been used for the data cleanining, crunching, and visualizations.
+                    These projects will be ongoing as optimal machine learning models require trial and error to improve upon.
                 </div>
             </div>
 
@@ -80,18 +80,20 @@
         <article class="row mt-5">
 
             <div class="col-lg-4">
-                <h2 class="text-center mt-1 mb-2" style="font-size: 16pt"><strong>Personal Consumption Expenditures (PCE)</strong></h2>
+                <h2 class="text-center mt-1 mb-2" style="font-size: 16pt"><strong>S&P500 Price, Volume, Volatility Analysis</strong></h2>
                 <div class="single-post-content-wrapper p-3">
-                    During the pandemic dump of March 2020, it can clearly be seen that PCE dropped massively year over year (YoY). The Core PCE (exluding food and energy) reported in April of 2020 fell 22.3% YoY, while PCE including food and energy fell 16.4% YoY.
+                    Unsupervised machine learning methods were used to evaluate clusters within the data set. The methods used for this analysis include principle components analysis (PCA), k-Means elbow curve, and t-SNE for clustering visualization.
                     <br><br>
-                    Because of the very large drop in 2020, the YoY numbers for 2021 were historically very large. As reported in April 2021, the Core PCE came out to +34.8% YoY and the PCE including energy and food was +25.4% YoY.
+                    Raw daily S&P500 price and volume data was taken from 1928 to 2021. The data was cleaned, formatted, and calculations for daily price changes, average true range (ATR), and relative volume were computed. ATR is a measure of volatility based on price spread fluctuations. Also, columns were added which logged the number of days in a row that price or volatility increased.
+                    <br><br>
+                    The elbow curve derived from k-Means analysis suggests the optimal number of clusters to be 4. The 4 clusters were input to a k-Means prediction model to produce the class labels for the original data set.
                 </div>
             </div>
 
             <div class="col-lg-8">
                 <div class="row text-center">
                     <a href="#">
-                        <img class="img-fluid figure-img" src="./Images/PCE.png">
+                        <img class="img-fluid figure-img" src="./Images/tsne_sp500_1.png">
                     </a>
                 </div>
             </div>
@@ -104,21 +106,45 @@
             <div class="col-lg-8">
                 <div class="row text-center">
                     <a href="#">
-                        <img class="img-fluid figure-img" src="./Images/GDP.png">
+                        <img class="img-fluid figure-img" src="./Images/elbow_curve_sp500_1.png">
                     </a>
                 </div>
             </div>
 
             <div class="col-lg-4">
-                <h2 class="text-center mt-1 mb-2" style="font-size: 16pt"><strong>Real Gross Domestic Product (GDP)</strong></h2>
+                <!-- <h2 class="text-center mt-1 mb-2" style="font-size: 16pt"><strong>Real Gross Domestic Product (GDP)</strong></h2> -->
                 <div class="single-post-content-wrapper p-3">
-                    During the pandemic dump of March 2020, real GDP dropped 9% YoY as reported on at the end of Q2 for 2020.
+                    After applying the machine learning assigned classes to the original dataset and color coding as shown below, there is no clear predictive ability of the current classification schema to choose good buying and selling opportunities. The first graph shown below is the S&P500 price data from 1928 to 2021. The second graph is S&P500 price data from December 2020 to December 2021.
                     <br><br>
-                    This large drop in 2020 created a comparitively large YoY jump of 12.2% as reported in Q2 of 2021.
+                    Recommendations for further improving the model with the aim of identifying high probability buy and sell points are to measure rates of change over time of the prices based on various simple or exponential moving averages. Also, the number of days in a row that price or volatility has gone up can be replaced with other more descriptive meaningful metrics to improve the predictions of the model.
+                    <br><br>
+                    Current analysis completed and published as of December 22nd, 2021
                 </div>
             </div>
 
         </article>
+
+        <!-- 3rd article -->
+        <article class="row mt-3 mb-5">
+
+            <div class="col-lg-6">
+                <div class="row text-center">
+                    <a href="#">
+                        <img class="img-fluid figure-img" src="./Images/long_sp500_1.png">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="row text-center">
+                    <a href="#">
+                        <img class="img-fluid figure-img" src="./Images/short_sp500_1.png">
+                    </a>
+                </div>
+            </div>
+
+        </article>
+
 
     </div>
 
